@@ -1,0 +1,87 @@
+html,
+input {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 2em;
+    background-color: rgb(248, 193, 109);
+}
+
+.header-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: #e29c4c;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label,
+input,
+button {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+label {
+    text-align: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
+input {
+    flex: auto;
+}
+
+button {
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(216, 108, 58);
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(100, 76, 30);
+    color: aliceblue;
+}
+
+error-output {
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(224, 38, 5);
+}
+
+@media only screen and (max-width:360px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .nativeDateTimePicker {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid rgb(0, 0, 0)
+    }
+}
